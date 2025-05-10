@@ -14,6 +14,7 @@ h1 {
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    background-color: rgb(132, 132, 245);
 }
 main {
     display: flex;
@@ -24,31 +25,35 @@ main {
     
     #html1 {
         box-shadow: inset 0px 1px 5px 1px #000000, 1px 0px 3px 1px #1146f78f;
-        background-color: #59ecff15;
         border-radius: 7px;
         padding: 20px;
         margin: 20px;
         width: 100%;
         max-width: 800px;
+        color: rgb(255, 166, 0);
+        background-color: rgba(6, 0, 83, 0.589);
     }
     #css2 {
         box-shadow: inset 0px 1px 5px 1px #000000, 1px 0px 3px 1px #1146f78f;
-        background-color: #59ecff15;
         border-radius: 7px;
         padding: 20px;
         margin: 20px;
         width: 100%;
         max-width: 800px;
+        color: rgb(255, 166, 0);
+        background-color: rgba(6, 0, 83, 0.589);
     }
     #js3 {
         box-shadow: inset 0px 1px 5px 1px #000000, 1px 0px 3px 1px #1146f78f;
-        background-color: #59ecff15;
         border-radius: 7px;
         padding: 20px;
         margin: 20px;
         width: 100%;
         max-width: 800px;
+        color: rgb(255, 166, 0);
+        background-color: rgba(6, 0, 83, 0.589);
     }
+   
 }
 
 
