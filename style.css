@@ -7,6 +7,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: clamp(1rem, 1.4vw, 1.7rem);
     
+    
 }
 h1 {
     color: #000000;
@@ -22,6 +23,8 @@ main {
     justify-content: center;
     align-items: center;
     margin: 25px;
+
+    
     
     #html1 {
         box-shadow: inset 0px 1px 5px 1px #000000, 1px 0px 3px 1px #1146f78f;
@@ -30,8 +33,8 @@ main {
         margin: 20px;
         width: 100%;
         max-width: 800px;
-        color: rgb(255, 166, 0);
-        background-color: rgba(6, 0, 83, 0.589);
+        background-color: rgba(49, 3, 255, 0.158);
+}
     }
     #css2 {
         box-shadow: inset 0px 1px 5px 1px #000000, 1px 0px 3px 1px #1146f78f;
@@ -40,8 +43,7 @@ main {
         margin: 20px;
         width: 100%;
         max-width: 800px;
-        color: rgb(255, 166, 0);
-        background-color: rgba(6, 0, 83, 0.589);
+        background-color: rgba(49, 3, 255, 0.158);
     }
     #js3 {
         box-shadow: inset 0px 1px 5px 1px #000000, 1px 0px 3px 1px #1146f78f;
@@ -50,8 +52,11 @@ main {
         margin: 20px;
         width: 100%;
         max-width: 800px;
-        color: rgb(255, 166, 0);
-        background-color: rgba(6, 0, 83, 0.589);
+        background-color: rgba(49, 3, 255, 0.158);
+    }
+    .link{
+        text-decoration: none;
+        color: rgb(0, 153, 255);
     }
    
 }
