@@ -3,62 +3,296 @@
 /* CSS Document */
 body {
     background-color: #59ecff15;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 140, 255);
     font-size: clamp(1rem, 1.4vw, 1.7rem);
     
     
 }
+    .logotipo {
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1em;
+    height:auto;
+    position: absolute; /* Posiciona a imagem de forma absoluta */
+    top:1em;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centralizar perfeitamente */
+    z-index: 10; /* Garante que a imagem fique acima */
+    }
+
+
+
 h1 {
-    color: #000000;
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #295bff;
+    text-shadow: 2px 2px 0px #000000;
+    font-size: clamp(2em, 2.4vw, 3rem);
+    text-wrap: nowrap;
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 245px;
+    background-color: transparent;
+    box-shadow:#42007981 0px 5px 6px 0px;
+    
+    
+
+}
+h2 {
+    font-family: "Arvo", serif;
+    font-weight: 700px;
+    font-style: italic;
+    color: #295bff;
+    text-shadow: 0.5px 1px 0px #000000;
+    font-size: clamp(1.1rem, 1.5vw, 2rem);
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    background-color: rgb(132, 132, 245);
+    background-color:none;
 }
+h3 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #081235;
+    text-shadow: 0.3px 0.5px 0px #ffffff;
+    font-size: clamp(1.1rem, 1.5vw, 2rem);
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color:none;
+}
+p {
+  font-family: "Chakra Petch", sans-serif;
+  color: #081235;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 0.7em;;
+  text-wrap: wrap;
+  text-align: left;
+  margin-left : 2em;
+  text-size-adjust: auto;
+  text-shadow: 0.3px 0.5px 0px #ffffff;
+  
+}
+xxx1 {
+    color: #ff6600;
+}
+
 main {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 25px;
-
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    flex-wrap: nowrap;
+    flex-direction: row;
     
     
-    #html1 {
-        box-shadow: inset 0px 1px 5px 1px #000000, 1px 0px 3px 1px #1146f78f;
-        border-radius: 7px;
-        padding: 20px;
-        margin: 20px;
-        width: 100%;
+    #html1{
+        
+        
+        padding: 1em;
+        margin-left: 1em;
+        width: auto;
         max-width: 800px;
-        background-color: rgba(49, 3, 255, 0.158);
-}
+        min-width: 150px;
+        max-height: 400px;
+        min-height: 150px;
+        
+        }
     }
     #css2 {
-        box-shadow: inset 0px 1px 5px 1px #000000, 1px 0px 3px 1px #1146f78f;
-        border-radius: 7px;
-        padding: 20px;
-        margin: 20px;
-        width: 100%;
+        padding: 1em;
+        margin-left: 1em;
+        width: auto;
         max-width: 800px;
-        background-color: rgba(49, 3, 255, 0.158);
+        min-width: 150px;
+        max-height: 400px;
+        min-height: 150px;
+        
     }
     #js3 {
-        box-shadow: inset 0px 1px 5px 1px #000000, 1px 0px 3px 1px #1146f78f;
-        border-radius: 7px;
-        padding: 20px;
-        margin: 20px;
-        width: 100%;
+        padding: 1em;
+        margin: 1em;
+        width: auto;
         max-width: 800px;
-        background-color: rgba(49, 3, 255, 0.158);
+        min-width: 150px;
+        max-height: 400px;
+        min-height: 150px;
+        
     }
     .link{
         text-decoration: none;
         color: rgb(0, 153, 255);
     }
+    .spanid {
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #ff0000;
+        font-size: clamp(1.5rem, 2vw, 2.5rem);
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        background-color: rgb(202, 44, 105);
+        box-shadow: 1px 2px 1px 3px #000000;
+        border: #e02525 1px solid;
+    }
+/* Estilo para o contêiner */
+.container {
+    display: flex; /* Alinha os spans lado a lado */
+    flex-wrap: wrap; /* Permite que os spans quebrem linha se necessário */
+    gap: 10px; /* Espaçamento entre as caixas */
+    justify-content: center; /* Centraliza os spans horizontalmente */
+}
+
+/* Estilo para os spans */
+.container span {
+    background-color: #007bff41; /* Fundo azul */
    
+    padding: 20px; /* Espaçamento interno */
+    margin: 3em;
+    margin-right: 3em;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    box-sizing: calc(border-box); /* Inclui padding e border na largura total */
+    flex: 1 1 calc(33.333% - 20px); /* Largura de 1/3 do contêiner com espaçamento */
+    min-width: 600px; /* Largura mínima */
+    max-width: 950px; /* Limita a largura máxima */
+    text-align: center; /* Centraliza o texto */
+        
+}
+
+  
+/* Ajuste para spans pares (opcional) */
+    .container span:nth-child(even) {
+    background-color: #7700ff23; /* Fundo azul mais escuro para pares */
+    
+ }
+
+ .cartao {
+        display: flexbox;
+        position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    background-color: rgb(255, 255, 255);
+    background-image:image-set("Imagens/cartão de vistias tec.png");
+    background-position-x: 25px;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-blend-mode: overlay;
+    box-shadow: 3px 1px 3px 4px #2b2333;
+    min-width: 300px;
+    max-width: 900px;
+    min-height: 220px;
+    max-height: 556px;
+    size: justify;
+    flex-wrap: wrap;
+    .logos {
+        margin-top: 50px;
+        margin-left: 20px;
+}
+.younick {
+    display: inline-flex;
+    z-index: 10;
+    position: static;
+    margin-left: 12px;
+    margin-top: 30px;
+    box-shadow:inset 0px 10px 20px #ff0000, 0px 10px 20px #4d1cff8f ;
+    border-radius: 50%;
+    
 }
 
 
+
+button {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    background-color:rgba(0, 71, 179, 0.548);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    border-bottom: 30px;
+    border-radius: 10px;
+    border-color: black;
+    cursor: pointer;
+    box-shadow: inset 3px 2px 1px 4px #6b00f754, 2px 1px 1px 2px #fda50052;
+
+}
+
+    
+.github button {
+    display:flex;
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+    margin-top: 70px;
+    margin-left: 10px;
+    text-shadow: 1px 1px 2px #474747;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    bottom: inherit;
+
+  
+}
+    .github button:hover {
+        background-color: rgb(255, 170, 11);
+        color: rgb(8, 0, 114);
+        box-shadow: inset 3px 2px 2px 6px #06050731, 3px 2px 2px 3px #ff7b0021;
+    }
+    .github button:active {
+        background-color: rgb(130, 184, 60);
+        color: rgb(1, 0, 59);
+        box-shadow: inset 3px 2px 1px 4px #06050731, 3px 2px 2px 3px #ff7b0021;
+    }
+.youtube button{
+    display: flex;
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+    margin-top:36px;
+    margin-left: 40px;
+    text-shadow: 1px 1px 2px #5a0000;
+    padding-top: 7px;
+    padding-bottom: 3px;
+   
+}
+    .youtube button:hover {
+        background-color: rgb(255, 170, 11);
+        color: rgb(255, 0, 0);
+        box-shadow: inset 3px 2px 2px 6px #06050731, 3px 2px 2px 3px #ff7b0021;
+    }
+    .youtube button:active {
+        background-color: rgb(130, 184, 60);
+        color: rgb(58, 0, 0);
+        box-shadow: inset 3px 2px 1px 4px #06050731, 3px 2px 2px 3px #ff7b0021;
+    }
+.instagram button{
+    display:flex;
+    color:rgb(0, 0, 0);
+    font-size:40px;
+    margin-left: 75px;
+    margin-top: 36px;
+    margin-bottom:10px;
+    text-shadow: 1px 1px 2px #7a0070;
+    padding-top: 7px;
+    padding-bottom: 4px;
+}
+    .instagram button:hover {
+        background-color: rgb(255, 170, 11);
+        color: rgb(105, 17, 156);
+        box-shadow: inset 3px 2px 2px 6px #06050731, 3px 2px 2px 3px #ff7b0021;
+    }
+    .instagram button:active {
+        background-color: rgb(130, 184, 60);
+        color: rgb(66, 0, 141);
+        box-shadow: inset 3px 2px 1px 4px #06050731, 3px 2px 2px 3px #ff7b0021;
+    }
+ }

@@ -1,67 +1,320 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" href="Imagens/logoyounick.ico" type="image/x-icon">
     <title>EazyWay</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+        
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+                .cartao {
+            min-width: 300px;
+            max-width: 900px;
+            min-height: 220px;
+            max-height: 556px;
+            animation: mymove 7s normal;
+            animation: mymove 7s infinite alternate;            
+               
+        }
+
+        @keyframes mymove {
+        from {background-color: rgb(255, 200, 100);}
+        to {background-color: rgb(255, 110, 100);}
+        }
+    </style>
 </head>
 <body>
-    <img src="Imagens/logoyounick.png" alt="icone" class="logo" width:"100px" height="100px">
-
-    <br>
-    <hr>
-    <br>
-
-    <h1>Way to HTML, CSS and JavaScript</h1>
-    <main>
+    <div class="inicio">
+        <span class="logotipo"><img src="Imagens/logoyounick.png" alt="icone" width="169px" height="169px" style=" border-radius: 50%;box-shadow: inset 0px -10px 8px 0px rgb(138, 40, 250), 0px 10px 8px -9px rgb(255, 0, 100);"></span>
+    </div>   
+    
+    <span class="titulo">
+    <h1>Way to HTML, CSS and JavaScript</h1> 
+    </span>
+    
+        <main>
         
-            <span id="html1">
-                <a href="html.html" target="_blank" class="link">
-                <h2>HTML</h2>
-                <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages. It describes the structure of a webpage using elements and tags.<br><br><br><br><br></p>
+            
+            
+            <span id="css2">
+                <a href="css.html" target="_blank" class="link">
+                    <h2>CSS</h2>
+                    <p style="margin-left: 0.2em;">CSS (folhas de estilo em cascata) é uma linguagem de folha de estilo usada para descrever a apresentação de um documento escrito em HTML. Ele controla o layout, as cores, as fontes e a aparência visual geral de uma página da web. <br><br><br></p>
                 </a>
             </span>
-        
-
-        <span id="css2">
-            <a href="css.html" target="_blank" class="link">
-                <h2>CSS</h2>
-                <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML. It controls the layout, colors, fonts, and overall visual appearance of a webpage. <br><br><br></p>
-            </a>
-        </span>
-        
-        <span id="js3">
+            <span id="html1">
+            <a href="html.html" target="_blank" class="link">
+            <h2 style="color: #F06528;">HTML</h2>
+                <p style="margin-left: 0.2em;">HTML (Hypertext Markup Language) é o idioma de marcação padrão para criar páginas da Web. Ele descreve a estrutura de uma página da web usando elementos e tags.<br><br><br></p>
+                </a>
+            </span>
+            
+            <span id="js3">
             <a href="javascript.html" target="_blank" class="link">
-            <h2>JavaScript</h2>
-            <p>JavaScript is a high-level, dynamic, untyped, and interpreted programming language. It is a core technology of the World Wide Web, alongside HTML and CSS, and enables interactive web pages.<br><br><br></p>
+            <h2 style="color: Yellow">JavaScript</h2>
+            <p style="margin-left: 0.2em;">O JavaScript é uma linguagem de programação de alto nível, dinâmica, sem forma e interpretada. É uma tecnologia central da World Wide Web, juntamente com HTML e CSS, e permite páginas da web interativas.<br><br><br></p>
             </a>
         </span>
-    </main>
-    <container><h2>Principal Conteúdo</h2>
-<p>&lt;Main&gt; - Conteúdo diretor da Página.</p>
+        </main>
+        
+    <img src="Imagens/html5sup.png" alt="HTMLlist" type="image/png" width="103%" height="auto" class="html5sup" style="margin-top: -2.5em; margin-left: -0.5em; max-height: 8em;">
 
-<p>&lt;Section&gt; - Divisão Temática do Conteúdo.</p>
+    <div class="container">
+        <span class="1html">
+        <h3>🧱 Estrutura do Documento</h3>
+            <p><xxx1>&lt;!DOCTYPE&gt;</xxx1> Declara o tipo de documento e a versão do HTML.</p>
+        
+            <p><xxx1>&lt;html&gt;</xxx1> Elemento raiz de um documento HTML.</p>
+            
+            <p><xxx1>&lt;head&gt;</xxx1> Contém metadados, como título, links de estilo e scripts.</p>
+            
+            <p><xxx1>&lt;title&gt;</xxx1> Define o título da página, exibido na aba do navegador.</p>
+            
+            <p><xxx1>&lt;meta&gt;</xxx1> Fornece metadados como codificação de caracteres e descrições.</p>
+        
+            <p><xxx1>&lt;link&gt;</xxx1> Relaciona o documento a recursos externos, como folhas de estilo.</p>
+            
+            <p><xxx1>&lt;style&gt;</xxx1> Contém regras de estilo CSS internas.</p>
+        
+            <p><xxx1>&lt;script&gt;</xxx1> Incorpora ou referencia scripts JavaScript.</p>
+            
+            <p><xxx1>&lt;base&gt;</xxx1>  Define a URL base para todos os links relativos no documento.</p>
+    </span>
+    
+    <span class="2html">
+         <h3>📄 Seções e Organização de Conteúdo</h3>
+            <p><xxx1>&lt;body&gt;</xxx1> Contém o conteúdo visível da página.</p>
+    
+            <p><xxx1>&lt;header&gt;</xxx1> Representa o cabeçalho de uma seção ou página.</p>
+        
+            <p><xxx1>&lt;nav&gt;</xxx1> Define um conjunto de links de navegação.</p>
+        
+            <p><xxx1>&lt;main&gt;</xxx1> Indica o conteúdo principal do documento.</p>
+    
+            <p><xxx1>&lt;section&gt;</xxx1> Agrupa conteúdo tematicamente relacionado.</p>
+    
+            <p><xxx1>&lt;article&gt;</xxx1> resenta conteúdo independente e auto-contido.</p>
+    
+            <p><xxx1>&lt;aside&gt;</xxx1> Contém conteúdo complementar, como barras laterais.</p>
+    
+            <p><xxx1>&lt;footer&gt;</xxx1> Representa o rodapé de uma seção ou página.</p>
+    
+            <p><xxx1>&lt;address&gt;</xxx1> Fornece informações de contato.</p>
+</span>
+    
+<span class="3html">
+        <h3>📝 Texto e Formatação</h3>
+            <p><xxx1>&lt;h1&gt;</xxx1> a <xxx1>&lt;h6&gt;</xxx1> Cabeçalhos, do mais importante (<xxx1>&lt;h1&gt;</xxx1>) ao menos <xxx1>&lt;h6&gt;</xxx1>
+    
+            <p><xxx1>&lt;p&gt;</xxx1> Define um parágrafo.</p>
+        
+            <p><xxx1>&lt;br&gt;</xxx1> Insere uma quebra de linha.</p>
+        
+            <p><xxx1>&lt;hr&gt;</xxx1> Insere uma linha horizontal para separação temática.</p>
+        
+            <p><xxx1>&lt;pre&gt;</xxx1> Exibe texto pré-formatado, preservando espaços e quebras de linha.</p>
+    
+            <p><xxx1>&lt;blockquote&gt;</xxx1> Inddica uma citação em bloco.</p>
+        
+            <p><xxx1>&lt;ol&gt</xxx1> Lista ordenada.</p>
+    
+            <p><xxx1>&lt;ul&gt;</xxx1> Lista não ordenada.</p>
+        
+            <p><xxx1>&lt;li&gt;</xxx1> Item de uma lista.</p>
+    
+            <p><xxx1>&lt;dl&gt;</xxx1> Lista de definição.</p>
+        
+            <p><xxx1>&lt;dt&gt;</xxx1> Termo de definição.</p>
+        
+            <p><xxx1>&lt;dd&gt;</xxx1> Descrição do termo.</p>
+    </span>
+    
+    <span class="4html">
+    <h3>🔤 Estilização de Texto</h3>
+            <p><xxx1>&lt;strong&gt;</xxx1> Indica texto com forte importância (geralmente negrito).</p>
+    
+            <p><xxx1>&lt;em&gt;</xxx1> Indica ênfase (geralmente itálico).</p>
+        
+            <p><xxx1>&lt;b&gt;</xxx1> Aplica negrito sem importância semântica.</p>
+        
+            <p><xxx1>&lt;i&gt;</xxx1> Aplica itálico sem ênfase semântica.</p>
+        
+            <p><xxx1>&lt;mark&gt;</xxx1> Destaca texto.</p>
+    
+            <p><xxx1>&lt;small&gt;</xxx1> Reduz o tamanho do texto.</p>
+        
+            <p><xxx1>&lt;del&gt;</xxx1> Indica texto excluído.</p>
+    
+            <p><xxx1>&lt;ins&gt;</xxx1> Indica texto inserido.</p>
+        
+            <p><xxx1>&lt;sub&gt;</xxx1> Texto subscrito.</p>
+    
+            <p><xxx1>&lt;sup&gt;</xxx1> Texto sobrescrito.</p>
+    </span>
+    
+    <span class="5html">
+        <h3>🔗 Hiperlinks e Ancoragem</h3>
+            <p><xxx1>&lt;a&gt;</xxx1> Define um hiperlink.</p>
+    
+            <p><xxx1>&lt;link&gt;</xxx1> Relaciona o documento a recursos externos.</p>
+    </span>
+    
+    <span class="6html">
+        <h3>🖼️ Mídia e Incorporamento</h3>
+                <p><xxx1>&lt;img&gt;</xxx1> Incorpora uma imagem.</p>
+    
+            <p><xxx1>&lt;figure&gt;</xxx1> Agrupa mídia e sua legenda.</p>
 
-<p>&lt;Artigo&gt; - Bloco de Conteúdo Independente (Ex: Post, Produto).</p>
+            <p><xxx1>&lt;figcaption&gt;</xxx1> Legenda de uma figura.</p>
 
-<p>&lt;fast&gt; - Conteúdo complementar (ex: Barra lateral).</p>
+            <p><xxx1>&lt;audio&gt;</xxx1> Incorpora conteúdo de áudio.</p>
 
-<p>&lt;H1&gt; ATÉ &lt;H6&gt; - Títulos e subtítulos, organizações hieráticas.</p>
+            <p><xxx1>&lt;video&gt;</xxx1> Incorpora conteúdo de vídeo.</p>
+        
+            <p><xxx1>&lt;source&gt;</xxx1> Especifica múltiplos recursos de mídia.</p>
 
-<p>&lt;p&gt; - Parágrafos.</p>
+            <p><xxx1>&lt;track&gt;</xxx1> Fornece faixas de texto para mídia.</p>
+        
+            <p><xxx1>&lt;embed&gt;</xxx1> Incorpora conteúdo externo.</p>
 
-<p>&lt;MIG&gt; - Imagens.</p>
-
-<p>&lt;TIMGE&gt; / &lt;FIGCAPTION&gt; - Imagens com legenda.</p>
-
-<p>&lt;Tima&gt; / &lt;udio&gt; - mín embutida.</p>
-</container>
+            <p><xxx1>&lt;object&gt;</xxx1> Representa um recurso incorporado.</p>
+        
+            <p><xxx1>&lt;param&gt;</xxx1> Define parâmetros par><s<i<xxx1>&lt;object<&gt;</xxx1>
+            
+            <p><xxx1>&lt;iframe&gt;</xxx1> Incorpora outra página HTML.</p>
+    </span>
+    
+    <span class="7html">
+        <h3>🧮 Tabelas</h3>
+            <p><xxx1>&lt;table&gt;</xxx1> Define uma tabela.</p>
+    
+            <p><xxx1>&lt;caption&gt;</xxx1> Legenda da tabela.</p>
+        
+            <p><xxx1>&lt;thead&gt;</xxx1> Cabeçalho da tabela.</p>
+        
+            <p><xxx1>&lt;tbody&gt;</xxx1> Corpo da tabela.</p>
+        
+            <p><xxx1>&lt;tfoot&gt;</xxx1> Rodapé da tabela.</p>
+    
+            <p><xxx1>&lt;tr&gt;</xxx1> Linha da tabela.</p>
+        
+            <p><xxx1>&lt;th&gt;</xxx1> Célula de cabeçalho.</p>
+    
+            <p><xxx1>&lt;td&gt;</xxx1> Célula de dados.</p>
+    </span>
+    
+    <span class="8html">
+        <h3>🧾 Formulários</h3>
+            <p><xxx1>&lt;form&gt;</xxx1> Define um formulário.</p>
+    
+            <p><xxx1>&lt;input&gt;</xxx1> Campo de entrada.</p>
+        
+            <p><xxx1>&lt;textarea&gt;</xxx1> Área de texto multilinha.</p>
+        
+            <p><xxx1>&lt;button&gt;</xxx1> Botão clicável.</p>
+        
+            <p><xxx1>&lt;select&gt;</xxx1> Lista suspensa.</p>
+    
+            <p><xxx1>&lt;option&gt;</xxx1> Opção em uma lista.</p>
+        
+            <p><xxx1>&lt;optgroup&gt;</xxx1>Agrupa opções relacionadas.</p>
+    
+            <p><xxx1>&lt;label&gt;</xxx1> Rotulo para um elemento de formulário.</p>
+        
+            <p><xxx1>&lt;fieldset&gt;</xxx1> Agrupa elementos relacionados.</p>
+    
+            <p><xxx1>&lt;legend&gt;</xxx1> Legenda para <xxx1>&lt;fieldset<&gt;</xxx1>
+        
+            <p><xxx1>&lt;datalist&gt;</xxx1> Lista de opções predefinidas.</p>
+        
+            <p><xxx1>&lt;output&gt;</xxx1> Resultado de um cálculo.</p>
+        
+            <p><xxx1>&lt;progress&gt;</xxx1> Barra de progresso.</p>
+        
+            <p><xxx1>&lt;meter&gt;</xxx1> Medição escalar.</p>
+    </span>
+    
+    <span class="9html">
+        <h3>⚙️ Scripts e Dados</h3>
+            <p><xxx1>&lt;script&gt;</xxx1> Incorpora ou referencia scripts.</p>
+    
+            <p><xxx1>&lt;noscript&gt;</xxx1> Conteúdo alternativo para navegadores sem suporte a scripts.</p>
+        
+            <p><xxx1>&lt;template&gt;</xxx1> Contém conteúdo que pode ser clonado e inserido posteriormente.</p>
+        
+            <p><xxx1>&lt;canvas&gt;</xxx1> Área para gráficos desenhados via script.</p>
+    </span>
+    
+    <span class="10html">
+        <h3>🧩 Elementos Semânticos</h3>
+            <p><xxx1>&lt;section&gt;</xxx1> Seção genérica de conteúdo.</p>
+    
+            <p><xxx1>&lt;article&gt;</xxx1> Conteúdo independente e auto-contido.</p>
+        
+            <p><xxx1>&lt;nav&gt;</xxx1> Conjunto de links de navegação.</p>
+        
+            <p><xxx1>&lt;aside&gt;</xxx1> Conteúdo complementar.</p>
+        
+            <p><xxx1>&lt;header&gt;</xxx1> Cabeçalho de uma seção ou página.</p>
+    
+            <p><xxx1>&lt;footer&gt;</xxx1> Rodapé de uma seção ou página.</p>
+        
+            <p><xxx1>&lt;main&gt;</xxx1> Conteúdo principal do documento.</p>
+    
+            <p><xxx1>&lt;figure&gt;</xxx1> Agrupa mídia e sua legenda.</p>
+        
+            <p><xxx1>&lt;figcaption&gt;</xxx1> Legenda de uma figura.</p>
+    
+            <p><xxx1>&lt;mark&gt;</xxx1> Destaca texto relevante.</p>
+        
+            <p><xxx1>&lt;time&gt;</xxx1> Representa uma data ou hora.</p>
+    </span>
+    
+    <span class="11html">
+        <h3>🧠 Metadados e SEO</h3>
+            <p><xxx1>&lt;meta&gt;</xxx1> Fornece metadados sobre o documento.</p>
+    
+            <p><xxx1>&lt;title&gt;</xxx1> Define o título da página.</p>
+        
+            <p><xxx1>&lt;base&gt;</xxx1> Define a URL base para links relativos.</p>
+        
+            <p><xxx1>&lt;link&gt;</xxx1> Relaciona o documento a recursos externos.</p>
+    </span>
+    
+    <span class="12html">
+        <h3>🧪 Elementos Obsoletos (Evite Usar)</h3>
+            <p><xxx1>&lt;font&gt;</xxx1> Definia estilo de fonte; substituído por CSS.</p>
+    
+            <p><xxx1>&lt;center&gt;</xxx1> Centralizava conteúdo; substituído por CSS.</p>
+        
+            <p><xxx1>&lt;big&gt;</xxx1><xxx1>&lt;strike&gt;</xxx1><xxx1>&lt;tt&gt;</xxx1> : substituídas por CSS.</p>
+    </span>
+</div>
     
         <br><br><br><br><br><br><br><br>
+        
+        
+        
+        
+        <!--rodapé da página-->
         <footer>
-           
+       <h3>Conheça meu trabalho nas redes sociais!</h3>
+    
+    <div class="cartao">
+        <div class="logos">
+            <div class="younick"><img src="Imagens/logoyounick.png" alt="YouNick" type="image/png" widith="150px" height="150px"></div>
+            <div class="github"><a href="https://github.com/YouNickDev" target="_blank" type="button"><button><img src="Imagens/Logo GitHub.png" alt="Github" type="image/png" widith="49px" height="49px">Git Hub</button></a></div>
+            <div class="youtube"><a href="https://www.youtube.com/@YouNickDev" target="_blank" type="button"><button><img src="Imagens/Logo Youtube.png" alt="YT" type="image/png" widith="49px" height="49px">YouTube</button></a></div>
+            <div class="instagram"><a href="https://www.instagram.com/younickdev/" target="_blank" type="button"><button><img src="Imagens/Logo Insta.png" alt="Insta" type="image/png" widith="51px" height="51px">Instagram</button></a></div>
+        </div>
+       
+    </div>
+    <p>Volte Sempre que precisa!!</p>
         </footer>
+
 </body>
 </html>
