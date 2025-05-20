@@ -26,24 +26,29 @@ body {
 
 
 h1 {
-    font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    color: #295bff;
-    text-shadow: 2px 2px 0px #000000;
-    font-size: clamp(2em, 2.4vw, 3rem);
-    text-wrap: nowrap;
+    font-family: "cyborg", Arial, Helvetica, sans-serif;
+    font-weight: 700px;
+    font-style: bold;
+    color: #00aeff;
+    text-shadow: 2px 2px 0px #1d003d;
+    font-size: clamp(1.3em, 2em, 110%);
+    text-wrap: wrap;
     text-align: center;
     margin-bottom: 0.5em;
-    margin-top: 245px;
-    background-color: transparent;
-    box-shadow:#42007981 0px 5px 6px 0px;
-    
-    
-
+    margin-top: 260px;
+}
+.styleh1 {
+    font-family: "origintech", serif;
+    font-weight: 700px;
+    font-style: bold;
+    color: #230044;
+    text-shadow: 1px 1.5px 0px #0084ff;
+    font-size: clamp(1.3rem, 2em, 130%);
+    text-align: center;
+    margin-top: 0.5rem;
 }
 h2 {
-    font-family: "Arvo", serif;
+    font-family: "origintech", serif;
     font-weight: 700px;
     font-style: italic;
     color: #295bff;
@@ -54,8 +59,61 @@ h2 {
     margin-bottom: 0.5rem;
     background-color:none;
 }
+#hrtitle {
+    height: 3px;
+    background-color: #1d003d;
+    margin-top: -1em;
+    margin-bottom: 2em;
+    margin-left: 10%;  
+    margin-right: 10%;
+    box-shadow: 0px 4px 7px 0px #00b7ff;
+}
+#hr1 {
+    height: 3px;
+    background-color: #642901f1;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    box-shadow: 0px 4px 7px 0px #ff5100;
+}
+#hr2 {
+    height: 3px;
+    background-color: #0b0135;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0px 4px 7px 0px #033eff;
+}
+#html5sup{
+    
+}
+
+#title1{
+    font-family: "origintech", system-ui, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    color: #F06528;
+    text-shadow: 0.5px 1px 0px #000000;
+    font-size: clamp(1.5em, 2em, 2.7em);
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 0rem;
+    margin-bottom: clamp(1rem, 4rem, 6rem);
+    background-color:none;
+}
+#title2{
+    font-family: "origintech", system-ui, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: hsla(234, 100%, 68%, 0.527);
+    text-shadow: 0.5px 1px 0px #000000;
+    font-size: clamp(1.5em, 2em, 2.7em);
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: clamp(0rem, 0rem, 0rem);
+    background-color:none;
+}   
 h3 {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: "aero", sans-serif;
     font-weight: 400;
     font-style: italic;
     color: #081235;
@@ -96,9 +154,7 @@ main {
     flex-direction: row;
     
     
-    #html1{
-        
-        
+    #html1{  
         padding: 1em;
         margin-left: 1em;
         width: auto;
@@ -147,7 +203,7 @@ main {
         border: #e02525 1px solid;
     }
 /* Estilo para o contêiner */
-.container {
+.container1 {
     display: flex; /* Alinha os spans lado a lado */
     flex-wrap: wrap; /* Permite que os spans quebrem linha se necessário */
     gap: 10px; /* Espaçamento entre as caixas */
@@ -155,7 +211,7 @@ main {
 }
 
 /* Estilo para os spans */
-.container span {
+.container1 span {
     background-color: #007bff41; /* Fundo azul */
    
     padding: 20px; /* Espaçamento interno */
